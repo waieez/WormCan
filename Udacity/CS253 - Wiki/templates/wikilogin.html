@@ -1,0 +1,32 @@
+{% extends "wikibase.html" %}
+
+{% block content %}
+
+
+<form method="post">
+	<table>
+		<tr>
+			<td>
+				Username:
+			</td>
+			<td>
+				<input name="username" value='{{username}}'>{{uerr}}{{exerr}}
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				Password:
+			</td>
+			<td>
+				<input name="password" value='{{password}}' type='password'>{{pwerr}}
+			</td>
+		</tr>
+	</table>
+	
+	<input type='submit' value="Login">
+
+
+</form>
+
+{% endblock %}

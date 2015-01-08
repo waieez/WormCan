@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+Shoppin Listy
+
+<form>
+	<input name="food" type="text"></input>
+	<input type="submit"></input>
+
+	<br>
+	<br>
+	
+	{% if food %}
+		{% for e in food %}
+			<input type="hidden" name="food" value="{{e}}"></input>
+		{% endfor %}
+	{% endif %}
+	
+	<ol>
+		{% if food %}
+		DAT LISTY
+			{% for e in food %}
+				<li>{{e}}</li>
+			{% endfor %}
+		{% endif %}
+	</ol>
+</form>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form>
+	<input name="droptable" type="submit" value="droptable"></input>
+	<input name="newpost" type="submit" value="newpost"></input>
+</form>
+
+<br>
+<br>
+
+    {% for post in posts %}
+    <div class="post">
+        <h2><div class="post-subject">{{post.subject}}</div></h2>
+        <pre class="post-content">{{post.content}}</pre>
+    </div>
+    {% endfor %}
+	
+<br>
+
+{% endblock %}

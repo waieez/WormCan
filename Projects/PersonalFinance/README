@@ -1,0 +1,6 @@
+Personal Financial Calculator
+
+Features:
+
+Estimates retirement contributions required per year to meet retirement goals.
+Recursively estimates salary required to retire based on given parameters.

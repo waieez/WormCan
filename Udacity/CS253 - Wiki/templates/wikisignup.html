@@ -1,0 +1,51 @@
+{% extends "wikibase.html" %}
+
+{% block content %}
+
+<form method="post">
+	<table>
+	<tr>
+		<td>
+			Username:
+		</td>
+		<td>
+			<input name="username" value='{{username}}'>{{uerr}}{{exerr}}
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			Password:
+		</td>
+		<td>
+			<input name="password" value='{{password}}' type='password'>{{pwerr}}
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			Verify:
+		</td>
+		<td>
+			<input name="verify" value='{{verify}}' type='password'>{{verr}}
+		</td>
+	</tr>
+	
+	<tr>
+		<td>
+			Email:
+		</td>
+		<td>
+			<input name="email" value='{{email}}'>{{emerr}}
+		</td>
+	</tr>
+	</table>
+
+	<input type='submit' value="Signup">
+	<br>
+	
+</form>
+
+
+
+{% endblock %}

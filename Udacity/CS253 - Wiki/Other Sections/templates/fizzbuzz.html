@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form>
+	<input type="text" name="n"></input>
+	<input type="submit"></input>
+	
+	<br>
+	<br>
+	
+	{% if n %}
+	FizzBuzzBitch!
+
+	<ol>
+		{% for x in range(1,n+1) %}
+			<li>
+			{% if x % 15 == 0 %}
+				FizzBuzz
+			{% elif x % 3 == 0 %}
+				Fizz
+			{% elif x % 5 == 0 %}
+				Buzz
+			{% else %}
+				{{x}}
+			{% endif %}
+			</li>
+		{% endfor %}
+	</ol>
+
+	{% endif %}
+</form>
+
+{% endblock %}

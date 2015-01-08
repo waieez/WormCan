@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{un}}, {{pw}}, {{salt}}
+
+	<form method="post">
+		<input name="username"><input name="password"><input type="submit">
+	</form>
+
+	{% for t in registered %}
+
+	<div class="post">
+		<h2><div class="t-user">{{t.regUser}}</div></h2>
+		<h2><div class="t-password">{{t.regPassword}}</div></h2>
+	</div>
+	
+	<br>
+	{% endfor %}
+	
+{% endblock %}

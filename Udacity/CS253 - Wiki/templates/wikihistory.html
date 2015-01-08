@@ -1,0 +1,17 @@
+{% extends "wikibase.html" %}
+
+{% block content %}
+
+<br>
+<br>
+    {% for event in history %}
+	<div class="wikihistory">
+	<h3>{{event[1]}}</h3>
+	saved: {{event[0]}}
+	<a href="/edit{{url}}?v={{event[2]}}">edit</a>   <a href="{{url}}?v={{event[2]}}">view</a>
+	<br>
+	<br>
+	</div>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> CS253 Build a Wiki Final </title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css">
+	</head>
+	
+	<body>
+		<div class="header">
+		<a href='/'>Home</a>
+		<a href={{url}}>Back</a>
+		<a href='/history{{url}}'>History</a>
+		<a href='edit{{url}}'>Edit</a>
+		<a href='/login'>Login</a>
+		<a href='/signup'>Signup</a>
+		<a href='/logout'>Logout</a>
+		</div>
+		<div class="wikibody">
+		{% block content %}
+		
+		{% endblock %}
+		</div>
+		<div class="footer">omg i'm a footer!</div>
+	</body>
+	
+</html>
+	

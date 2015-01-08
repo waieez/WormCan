@@ -1,0 +1,41 @@
+body {
+	background-color: #301614;
+	margin:0 1% 0 1%;
+	height:100%;
+	overflow: auto;
+}
+
+textarea {
+	width: 95%;
+	min-height: 40em;
+}
+
+a {
+	margin: 0 .5em 0 .5em;
+}
+
+.header {
+	min-height: 2em;
+	padding: 5% 0 5% 0;
+	background-color: #F46F66;
+	margin: 2% 1% 0 1%;
+}
+
+.wikibody {
+	margin:inherit;
+	background-color: #ffffff;
+	min-height: 45em;
+	max-height: 100%;
+	padding:5% 5% 5% 5%
+}
+
+.wikihistory {
+	background-color: #ffffff;
+}
+
+.footer {
+	min-height: 2em;
+	padding: 0 0 5% 0;
+	background-color: #F46F66;
+	margin: 0 1% 0 1%;
+}
